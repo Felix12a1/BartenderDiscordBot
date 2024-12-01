@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BartenderDCBot", "BartenderDCBot\BartenderDCBot.pyproj", "{C27C57A5-F73F-459A-86C0-EDFC52E0E070}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C27C57A5-F73F-459A-86C0-EDFC52E0E070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27C57A5-F73F-459A-86C0-EDFC52E0E070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E57D6E9-1689-456F-9DD5-FFA571B5E7EA}
+	EndGlobalSection
+EndGlobal

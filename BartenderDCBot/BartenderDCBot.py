@@ -1,9 +1,15 @@
-import discord
+﻿import discord
 from discord.ext import commands
 from flask import Flask, request, jsonify
 import asyncio
 import aiohttp
 from threading import Thread
+import os
+from dotenv import load_dotenv
+
+# Cargar las variables del archivo .env
+load_dotenv()
+
 
 # Configuración del bot
 intents = discord.Intents.default()
@@ -15,7 +21,11 @@ app = Flask(__name__)
 
 # Canal de Discord donde enviar los mensajes
 DISCORD_CHANNEL_ID = 1312695472359735328  # Reemplaza con el ID de tu canal
-DISCORD_TOKEN = "MTMxMjM0MTU0Mjc1Njk0NjAwMA.G6Yb9A.k2oiDF8NDBeBD20KjNNIubyoKVuCjW6nq6DbAM"  # Reemplaza con el token de tu bot
+# Obtener el token desde la variable de entorno
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+
+# Verificar si el token se cargó correctamente
+print("Discord Token cargado:", DISCORD_TOKEN)
 
 # Webhook de GitHub
 @app.route('/webhook', methods=['POST'])
